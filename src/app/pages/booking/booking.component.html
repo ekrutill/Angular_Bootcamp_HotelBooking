@@ -1,0 +1,45 @@
+ <div class="container-fluid" >
+    <div class="row field">
+      <div class="col-xs-12 mt-2 headerfield">
+            <h5 class="mx-3" style="width:250px;"> Let's start a new trip!</h5>
+            <a 
+            routerLink="/login"
+            > 
+            <img src="./assets/mat-avatar.svg" alt="login" style="margin-right:2px;"></a>
+        </div>
+        
+          <app-booking-detail
+          >
+          </app-booking-detail>
+
+        
+      <!-- <div class="row">
+          <div> -->
+            <app-booking-list
+              (placeWasSelected)="selectedPlace = $event">
+            </app-booking-list>
+          <!-- </div>
+      </div> -->
+
+      <div class="col-xs-12 mt-5 footerfield text-center">
+        <div class="icons">
+          <img src="./assets/recent.svg" alt="recent">
+          <p>Recent</p>
+        </div>
+
+        <div class="icons">
+          <img src="./assets/favorites.svg" alt="favorites">
+          <p>Favorites</p>
+        </div>
+
+        <div class="icons">
+          <img src="./assets/nearby.svg" alt="nearby">
+          <p>Nearby</p>
+        </div>
+      </div>
+    <div>
+</div>
+
+
+
+  

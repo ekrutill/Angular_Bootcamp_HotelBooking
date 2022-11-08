@@ -1,0 +1,63 @@
+
+
+.slideshow {
+    height: 100%;
+    overflow: hidden; /* to hide slides in x-direction */
+    position: relative;
+}
+
+.slideshow-wrapper {
+    display: flex;
+    width: 400%;
+    height: 100%;
+    position: relative;
+    animation: slideshow 20s infinite;
+ }
+
+.slide {
+    width: 70%;
+    height: 70%;
+}
+.slide-img {
+
+    object-fit: cover; 
+}
+
+@keyframes slideshow {
+    0%  { left: 0; }
+    10% { left: 0; }
+    15% { left: -100%; }
+    25% { left: -100%; }
+    30% { left: -200%; }
+    40% { left: -200%; }
+    45% { left: -300%; }
+    55% { left: -300%; }
+    60% { left: -200%; }
+    70% { left: -200%; }
+    75% { left: -100%; }
+    85% { left: -100%; }
+    90% { left: 0%; }
+}
+
+
+
+.slide-btn-1:focus~.slideshow-wrapper {
+    animation: normal;
+    left: 0;
+}
+.slide-btn-2:focus~.slideshow-wrapper {
+    animation: normal;
+    left: -100%;
+}
+.slide-btn-3:focus~.slideshow-wrapper {
+    animation: normal;
+    left: -200%;
+}
+.slide-btn-4:focus~.slideshow-wrapper {
+    animation: normal;
+    left: -300%;
+}
+
+.slide-btn:focus {
+    background-color:  white;
+}

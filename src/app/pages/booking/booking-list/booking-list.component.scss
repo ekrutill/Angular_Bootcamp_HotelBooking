@@ -1,0 +1,14 @@
+
+.grids {
+    // display: grid;
+    // grid-template-columns: 1fr 1fr;
+    // gap:16px
+    display: flex;
+    justify-content: center;
+    width:100vw;
+    flex-wrap: wrap;
+    margin-left:-12px;
+    background-color: rgb(240, 240, 235);
+    
+}
+
